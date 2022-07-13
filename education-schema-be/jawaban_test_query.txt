@@ -1,0 +1,15 @@
+Soal!!
+3. buatlah program query yang sudah di sediakan import query kedalam  db untuk melihat data table 
+
+    1. buatlah query untuk menampilkan peserta dengan gaji tertinggi
+    2. buatlah query untuk menampilkan peserta BACKEND dengan nilai tertinggi dan gaji tertinggi
+    3. buatlah query untuk melihat total peserta yang berada dalam kelas frontend
+    4. buatlah query untuk menampilkan jumlah kehadiran tertinggi dan nilai tertinggi dalam kelas frontend
+
+1. SELECT * FROM `kawahedukasi` ORDER BY gaji DESC LIMIT 1
+
+2. SELECT nama, nilai, kelas, max(gaji) FROM `kawahedukasi` WHERE kelas = 'BACKEND';
+
+3. SELECT COUNT(*) FROM kawahedukasi WHERE kelas = 'FRONTEND';
+
+4. SELECT nama, kelas, max(jumlah_kehadiran), MAX(nilai) FROM `kawahedukasi` WHERE kelas = 'FRONTEND';
