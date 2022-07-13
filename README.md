@@ -1,2 +1,2 @@
 # hammadyunrizal-test-be-kawahedukasi
-Susah buat pushnya min, maaf
+Susah buat pushnya min, maaf jadi telat
